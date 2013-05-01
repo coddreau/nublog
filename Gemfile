@@ -14,5 +14,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'protected_attributes'
+
 # Use unicorn as the app server
 gem 'unicorn'
