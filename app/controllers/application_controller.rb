@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Metal
   include AbstractController::Callbacks
   include ActionController::Instrumentation
   include ActionController::ParamsWrapper
-
+  include ApplicationHelper
+  
   wrap_parameters format: [:json]
 end

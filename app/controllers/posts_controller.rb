@@ -7,4 +7,9 @@ class PostsController < ApplicationController
     @posts = Post.all
     render json: PostCollectionPresenter.new(@posts)
   end
+  def create
+    @post = Post.new params[:post]
+    @post.user_id = 1 #TODO
+    render json: (@post.save ? PostPresenter.new(@post) : validation_error(@post))
+  end
 end
