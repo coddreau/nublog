@@ -9,4 +9,5 @@
 /log/*.log
 /tmp
 
-.rvmrc
+.ruby-version
+.ruby-gemset
