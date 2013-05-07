@@ -15,6 +15,7 @@ group :doc do
 end
 
 gem 'protected_attributes'
+gem 'devise'
 
 # Use unicorn as the app server
 gem 'unicorn'
